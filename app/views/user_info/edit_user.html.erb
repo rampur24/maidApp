@@ -1,0 +1,78 @@
+<h1>new user_info edit</h1>
+   <%= form_for @userinfo, :as => :user_info, :url => update_user_path, :method => :post do |form| %>
+  <p>
+    <%= form.label :UserID %><br>
+    <%= form.text_field :UserID %>
+  </p>
+  <p>
+    <%= form.label :PhoneNumber %><br>
+    <%= form.text_field :PhoneNumber %>
+  </p>
+ <p>
+   <%= form.label :Gender %>
+   <%= form.select :Gender, [ 'Male','Female'], :prompt => 'Select One' %>
+ 
+    <%= form.label :Age %>
+    <%= form.select :Age, (18..99) %>
+  </p>
+ <p>
+    <%= form.label :UserType %><br>
+    <%= form.text_field :UserType %>
+  </p>
+ 
+  <p>
+    <%= form.label :AcountCreationDate %><br>
+    <%= form.text_field :AcountCreationDate %>
+  </p>
+ <p>
+   <%= form.label :LastUpdate %><br>
+   <%= form.text_field :LastUpdate %>
+ </p>
+ <p>
+    <%= form.label :IsAcountActive %><br>
+    <%= form.text_field :IsAcountActive %>
+  </p>
+ <p>
+    <%= form.label :UserCity %><br>
+    <%= form.text_field :UserCity %>
+  </p>
+  <p>
+   <%= form.label :UserArea %><br>
+   <%= form.text_field :UserArea %>
+ </p>
+
+  <p>
+    <%= form.label :PinCode %><br>
+    <%= form.text_field :PinCode %>
+  </p>
+ <p>
+   <%= form.label :LocalAddress %><br>
+   <%= form.text_field :LocalAddress %>
+ </p>
+ <p>
+    <%= form.label :Latitute %><br>
+    <%= form.text_field :Latitute %>
+  </p>
+ <p>
+    <%= form.label :Longitude %><br>
+    <%= form.text_field :Longitude %>
+  </p>
+  <p>
+   <%= form.label :GovtIDVerified %><br>
+   <%= form.text_field :GovtIDVerified %>
+ </p>
+ <!-- <p>
+    <%#= form.label :OTP %><br>
+    <%#= form.text_field :OTP %>
+  </p> -->
+ <p>
+    <%= form.label :ServiceType %><br>
+    <%= form.text_field :ServiceType %>
+  </p>
+  <p>
+    <%= form.submit 'Submit'%>&nbsp;&nbsp;&nbsp;
+    <%= form.submit 'Clear Form', :type => 'reset' %>
+
+  </p>
+ <% end %>
+<%= link_to 'All Item', all_points_service_type_name_path %>

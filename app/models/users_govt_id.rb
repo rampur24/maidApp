@@ -1,0 +1,2 @@
+class UsersGovtId < ApplicationRecord
+end

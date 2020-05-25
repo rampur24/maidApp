@@ -1,0 +1,49 @@
+<h1>Listing index</h1>
+<table border="1">
+  <tr>
+    <th>UserID</th>
+    <th>PhoneNumber</th>
+    <th>Gender</th>
+    <th>Age</th>
+    <th>UserType</th>
+    <th>AcountCreationDate</th>
+    <th>LastUpdate</th>
+    <th>IsAcountActive</th>
+    <th>UserCity</th>
+    <th>UserArea</th>
+    <th>PinCode</th>
+    <th>LocalAddress</th>
+    <th>Latitute</th>
+    <th>Longitude</th>
+    <th>GovtIDVerified</th>
+    <th>ServiceType</th>
+    <th>Action</th>
+    
+  </tr>
+ 
+  <% @userinfos.each do |userinfo| %>
+    <tr>
+      <td><%= userinfo.UserID %></td>
+      <td><%= userinfo.PhoneNumber %></td>
+      <td><%= userinfo.Gender %></td>
+      <td><%= userinfo.Age %></td>
+      <td><%= userinfo.UserType %></td>
+      <td><%= userinfo.AcountCreationDate %></td>
+      <td><%= userinfo.LastUpdate %></td>
+      <td><%= userinfo.IsAcountActive %></td>
+      <td><%= userinfo.UserCity %></td>
+      <td><%= userinfo.UserArea %></td>
+      <td><%= userinfo.PinCode %></td>
+      <td><%= userinfo.LocalAddress %></td>
+      <td><%= userinfo.Latitute %></td>
+      <td><%= userinfo.Longitude %></td>
+      <td><%= userinfo.GovtIDVerified %></td>
+      <td><%= userinfo.ServiceType %></td>
+      <td><%#= link_to 'Show', show_path(userinfo) %>
+      <%= link_to 'edit', edit_user_path(userinfo) %>/
+      <%= link_to 'Destroy', destroy_user_path(userinfo),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

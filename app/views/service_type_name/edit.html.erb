@@ -1,0 +1,31 @@
+<h1>new servicetypename edit</h1>
+   <%= form_for @servicetypename, :as => :service_type_name, :url => update_path, :method => :post do |form| %>
+   <%#= form_with scope: :service_type_name, url: new_path, local: true do |form| %>
+  <p>
+    <%= form.label :servicetypeId %><br>
+    <%= form.text_field :servicetypeId %>
+  </p>
+  <p>
+    <%= form.label :ServiceName %><br>
+    <%= form.text_field :ServiceName %>
+  </p>
+ <p>
+   <%= form.label :ServiceType %><br>
+   <%= form.text_field :ServiceType %>
+ </p>
+ <p>
+    <%= form.label :Servicedescription %><br>
+    <%= form.text_field :Servicedescription %>
+  </p>
+ <p>
+    <%= form.label :ServiceStatus %><br>
+    <%= form.text_field :ServiceStatus %>
+  </p>
+ 
+  <p>
+    <%= form.submit 'Submit'%>&nbsp;&nbsp;&nbsp;
+    <%= form.submit 'Clear Form', :type => 'reset' %>
+
+  </p>
+ 
+<% end %>

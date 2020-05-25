@@ -1,0 +1,2 @@
+class ServiceTypeName < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module ServiceTypeNameHelper
+end

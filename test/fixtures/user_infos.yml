@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  UserID: 1
+  PhoneNumber: MyString
+  Gender: MyString
+  Age: MyString
+  UserType: 1
+  AcountCreationDate: 2020-05-14 17:54:32
+  LastUpdate: 2020-05-14 17:54:32
+  IsAcountActive: false
+  UserCity: MyString
+  UserArea: MyString
+  PinCode: MyString
+  LocalAddress: MyString
+  Latitute: 9.99
+  Longitude: 9.99
+  GovtIDVerified: false
+  OTP: MyString
+  ServiceType: MyString
+
+two:
+  UserID: 1
+  PhoneNumber: MyString
+  Gender: MyString
+  Age: MyString
+  UserType: 1
+  AcountCreationDate: 2020-05-14 17:54:32
+  LastUpdate: 2020-05-14 17:54:32
+  IsAcountActive: false
+  UserCity: MyString
+  UserArea: MyString
+  PinCode: MyString
+  LocalAddress: MyString
+  Latitute: 9.99
+  Longitude: 9.99
+  GovtIDVerified: false
+  OTP: MyString
+  ServiceType: MyString

@@ -1,0 +1,21 @@
+<h1>Listing index</h1>
+<table border="1">
+  <tr>
+    <th>ServicetypeId</th>
+    <th>ServiceName</th>
+    <th>Action</th>
+    
+  </tr>
+ 
+  <% @servicetypenames.each do |servicetypename| %>
+    <tr>
+      <td><%= servicetypename.servicetypeId %></td>
+      <td><%= servicetypename.ServiceName %></td>
+      <td><%= link_to 'Show', show_path(servicetypename) %>/
+      <%= link_to 'edit', edit_path(servicetypename) %>/
+      	<%= link_to 'Destroy', destroy_path(servicetypename),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
